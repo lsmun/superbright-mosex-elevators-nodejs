@@ -1,7 +1,9 @@
-// /dev/ttyACM0
+// Uses the serialport library
+// https://www.npmjs.com/package/serialport
+// Must use version 4.0.7
 
 // serial port initialization:
- var serialport = require('serialport'), // include the serialport library
+var serialport = require('serialport'), // include the serialport library
      SerialPort = serialport.SerialPort, // make a local instance of serial
      portName = "/dev/ttyACM0"
      portConfig = {
